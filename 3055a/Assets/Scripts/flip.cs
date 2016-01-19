@@ -2,7 +2,7 @@
 using System.Collections;
 
 public class flip : MonoBehaviour {
-    public float flipAmount;
+    
 	// Use this for initialization
 	void Start () {
 	
@@ -12,8 +12,11 @@ public class flip : MonoBehaviour {
 	void Update () {
         if (!GetComponentInParent<Movement>().facingRight)
         {
+            
             Vector3 theScale = transform.localScale;
-            theScale.x *= -1;
+            theScale.y = -1;
+            theScale.x = -1;
+            theScale.z = -1;
             transform.localScale = theScale;
 
         }

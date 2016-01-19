@@ -5,6 +5,7 @@ public class shooting : MonoBehaviour {
     public GameObject bulletPrefab;
     public GameObject bulletLocation;
     public float fireDelay = 0;
+    public bool shotRight = false;
     float cooldownTimer = 0;
 	// Use this for initialization
 	void Start () {
@@ -22,12 +23,15 @@ public class shooting : MonoBehaviour {
                 cooldownTimer = fireDelay;
             if (rot == true)
             {
+                shotRight = true;
                 Instantiate(bulletPrefab, bulletLocation.transform.position, transform.rotation);
+                
             }
             else
             {
-                print("hello");
+                shotRight = false;
                 Instantiate(bulletPrefab, bulletLocation.transform.position, transform.rotation);
+               
             }
                 
             }
