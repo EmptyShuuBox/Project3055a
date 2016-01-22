@@ -65,9 +65,9 @@
     <Compile Include="Assets\Scripts\AIcontrols.cs" />
     <Compile Include="Assets\Scripts\FollowGun.cs" />
     <Compile Include="Assets\Scripts\Movement.cs" />
-    <Compile Include="Assets\Scripts\SideMoveAI.cs" />
     <Compile Include="Assets\Scripts\Switch.cs" />
     <Compile Include="Assets\Scripts\aim.cs" />
+    <Compile Include="Assets\Scripts\detection.cs" />
     <Compile Include="Assets\Scripts\flip.cs" />
     <Compile Include="Assets\Scripts\moveForward.cs" />
     <Compile Include="Assets\Scripts\shooting.cs" />
